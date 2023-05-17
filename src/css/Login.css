@@ -1,0 +1,210 @@
+* {
+  box-sizing: border-box;
+  font-family: "main";
+}
+@font-face {
+  font-family: "main";
+  src: url("../calibri.ttf");
+}
+.container-login {
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 60px auto;
+  width: 400px;
+  height: 500px;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  box-shadow: 0px 0px 20px 3px rgba(0, 0, 0, 0.55);
+}
+.title-login {
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+  font-weight: bold;
+  color: rgb(63, 62, 62);
+  font-size: 3rem;
+}
+.input-zone-login {
+  width: 75%;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.input-box1-login,
+.input-box2-login {
+  position: relative;
+  width: 284px;
+  height: 30px;
+  margin: 20px auto 0 auto;
+  border-bottom: 2px solid rgb(63, 62, 62);
+}
+.user-label-login,
+.pass-label-login {
+  font-family: "main";
+  position: absolute;
+  right: 210px;
+  transform: translateY(-50%);
+  color: rgb(63, 62, 62);
+  font-weight: bold;
+  pointer-events: none;
+  transition: 0.5s;
+  font-size: 1.2em;
+}
+.user-label-login {
+  right: 242px;
+}
+
+/* @keyframes title {
+  from { top: 50%;}
+  to { top: -5px;}
+}
+
+.user-input-login,
+.pass-input-login {
+  animation-name: title;
+  animation-duration: 1s;
+} */
+
+.user-input-login,
+.pass-input-login {
+  width: 100%;
+  height: 40px;
+  background: transparent;
+  border: none;
+  font-size: 1.2em;
+  outline: none;
+  color: rgb(63, 62, 62);
+}
+.remember-login {
+  margin: 16px 10px;
+  font-size: 0.8em;
+  font-weight: bold;
+  color: rgb(63, 62, 62);
+}
+.remember-login-check {
+  scale: 1.2;
+}
+.error-msg {
+  margin-bottom: -20px;
+  font-weight: bold;
+  color: rgb(251, 87, 87);
+  animation: horizontal-shaking 0.3s;
+}
+.error-msg-signup {
+  margin-bottom: -20px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: rgb(251, 87, 87);
+  animation: horizontal-shaking 0.3s;
+}
+.error-animate {
+  animation: horizontal-shaking 0.3s;
+}
+
+@keyframes horizontal-shaking {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(5px);
+  }
+  50% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.btn1-login {
+  margin: 0 auto;
+  margin-left: 54px;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 290px;
+  margin-top: 60px;
+  transition: transform 0.3s ease 0s;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid rgb(60, 75, 96);
+  color: rgb(63, 62, 62);
+  border-radius: 10px;
+}
+.btn1-login:hover {
+  color: white;
+  background-color: rgb(74, 105, 142);
+  border: 2px solid rgb(60, 75, 96);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.55);
+  transition: 0.4s;
+}
+.line-login {
+  width: 314px;
+  height: 2px;
+  margin: 0 auto;
+  margin-top: 20px;
+  border-bottom: 2px solid rgb(63, 62, 62);
+  border-radius: 15px;
+}
+.firstText-login {
+  margin: 20px auto 0 auto;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: rgb(63, 62, 62);
+}
+.btn2-login {
+  margin: 0 auto;
+  height: 40px;
+  width: 290px;
+  transition: transform 0.3s ease 0s;
+  margin-bottom: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: 2px solid rgb(63, 62, 62);
+  color: rgb(63, 62, 62);
+}
+.btn2-login:hover {
+  /* transform: translateY(-10px); */
+  color: white;
+  background-color: rgb(74, 105, 142);
+  border: 2px solid rgb(60, 75, 96);
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.55);
+  transition: 0.4s;
+}
+@media screen and (max-width: 560px) {
+  .container-login {
+    width:100%;
+    align-items: center;
+  }
+   .input-zone-login {
+    width: 90%;
+  }
+  .input-box1-login,
+  .input-box2-login {
+    width: 100%;
+    margin: 20px 0;
+  }
+  .user-input-login,
+  .pass-input-login {
+    width: 100%;
+  }
+  .user-label-login{
+    right: 84%;
+  }
+  .pass-label-login {
+    right: 72%;
+  } 
+  .btn1-login {
+    margin-left: 0;
+  }
+  .line-login {
+    width: 90%;
+  }
+
+}

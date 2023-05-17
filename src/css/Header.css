@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "main";
+  src: url("../calibri.ttf");
+}
+.header {
+  max-width: 100%;
+  min-height: 70px;
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+}
+.title-header {
+  text-decoration: none;
+  color: rgb(110, 109, 109);
+  font-size: 3rem;
+  font-family: "main";
+  font-weight: bold;
+}
+.header-container {
+  margin: 0 auto;
+  width: 70%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar {
+  margin-left: 50px;
+  font-size: 1.2rem;
+  font-weight: normal;
+  display: flex;
+}
+.navbar a {
+  padding: 24px;
+  height: 70px;
+  text-decoration: none;
+  color: rgb(110, 109, 109);
+}
+.navbar a:hover {
+  background-color: rgba(248, 205, 205, 0.5);
+  transition: 0.2s;
+}
+.navbar a:focus {
+  background-color: rgba(248, 205, 205, 0.5);
+  transition: 0.2s;
+}
+.mobile-nav {
+  display: none;
+}
+.logout-btn {
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 80px;
+  margin: auto;
+  margin-left: 20px;
+  border-radius: 4px;
+  color: rgb(105, 105, 105);
+  background-color:rgb(236, 236, 236) ;
+  border: none;
+}
+.logout-btn:hover{
+  color: rgb(236, 236, 236) ;
+  background-color: rgb(208, 115, 115) ;
+  transition: 0.3s;
+}
+@media screen and (max-width: 875px) {
+  .navbar {
+    font-size: 1.2rem;
+    font-weight: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    top: 70px;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: rgba(101, 101, 101, 0.9);
+    box-shadow: 0 40px 60px rgba(248, 205, 205, 0.5);
+  }
+  .navbar.active {
+    right: 0px;
+    transition: 0.4s ease-in-out;
+  }
+  .navbar a {
+    text-align: center;
+    width: 100%;
+    padding: 16px;
+    height: 60px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  }
+  .navbar a:hover {
+    background-color: rgba(199, 199, 199, 0.5);
+    transition: 0.2s;
+  }
+  .mobile-nav {
+    display: block;
+    margin: 10px 20px;
+  }
+  .logout-btn {
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 30px;
+    width: 80px;
+    margin: 0 auto;
+    margin-top: 100%;
+  }
+  .logout-btn:hover{
+    color: rgb(236, 236, 236) ;
+    background-color: rgb(181, 84, 84) ;
+    transition: 0.3s;
+  }
+}  
+

@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+.main {
+  max-width: 100%;
+  min-height: 500px;
+}
+.main-container {
+  margin: 0 auto;
+  max-width: 80%;
+  height: 100%;
+  min-height: 700px;
+  font-family: "main";
+}

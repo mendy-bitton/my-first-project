@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+  }
+  @font-face {
+    font-family: "main";
+    src: url("../calibri.ttf");
+  }
+  .loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.7);
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.loader-wrap{
+    margin: 0 auto;
+}
+.text-loading{
+    color: white;
+    font-size: 2rem;
+    margin: 0 auto;
+}

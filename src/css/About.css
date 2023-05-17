@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    font-family: "main";
+  }
+  @font-face {
+    font-family: "main";
+    src: url("../calibri.ttf");
+    
+  }
+  .title1-about{
+    margin: 40px 0;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(63, 62, 62);
+  }
+  .container-guide{
+    background-color: rgba(67, 67, 67, 0.8);
+    border-radius: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    padding-bottom: 20px;
+  }
+  .title2-about{
+    text-shadow: 4px 4px #141414;
+    margin: 40px 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(241, 225, 225);
+  }
+  .img-guide-about{
+    border-radius: 20px;
+    max-width: 90%;
+  }
+  @media screen and (max-width: 770px) {
+
+    .title2-about{
+      font-size: 2rem;
+      padding: 0px 20px;
+    }
+  }

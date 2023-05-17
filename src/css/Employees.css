@@ -1,0 +1,213 @@
+* {
+  box-sizing: border-box;
+  font-family: "main";
+}
+@font-face {
+  font-family: "main";
+  src: url("../calibri.ttf");
+}
+.container-employees {
+  margin: 40px 0;
+  width: 100%;
+}
+.nav-employees {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.btns-employees {
+  margin-top: 10px;
+  margin-right: 20px;
+}
+.title-employees {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(63, 62, 62);
+}
+.btns-employees button {
+  width: 114px;
+  height: 30px;
+  margin-left: 20px;
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+}
+#All {
+  background-color: rgb(74, 105, 142);
+  border: 2px solid rgb(60, 75, 96);
+  color: white;
+}
+#All:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(60, 75, 96);
+  color: rgb(60, 75, 96);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  transition: 0.3s;
+}
+#Available {
+  background-color: rgb(23, 193, 102);
+  border: 2px solid rgb(15, 131, 69);
+  font-weight: bold;
+  color: white;
+}
+#Available:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(15, 131, 69);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  color: rgb(15, 131, 69);
+  transition: 0.3s;
+}
+#Not-Available {
+  background-color: rgb(211, 58, 41);
+  border: 2px solid rgb(221, 46, 27);
+  font-weight: bold;
+  color: white;
+}
+#Not-Available:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(221, 46, 27);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  color: rgb(221, 46, 27);
+  transition: 0.3s;
+}
+#On-A-Task {
+  background-color: rgb(231, 199, 43);
+  border: 2px solid rgb(156, 131, 5);
+  font-weight: bold;
+  color: white;
+}
+#On-A-Task:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(156, 131, 5);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  color: rgb(156, 131, 5);
+  transition: 0.3s;
+}
+.employees-table {
+  margin-top: 60px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.employees-table h2 {
+  font-size: 2rem;
+  width: 100%;
+  font-weight: normal;
+  text-align: center;
+}
+.add-employee {
+  margin: 20px 0;
+  width: 300px;
+  height: 50px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  font-weight: bold;
+}
+.add-employee {
+  background-color: rgb(74, 105, 142);
+  border: 2px solid rgb(60, 75, 96);
+  color: white;
+}
+.add-employee:hover {
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(60, 75, 96);
+  color: rgb(60, 75, 96);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  transition: 0.3s;
+}
+/* .employees-table table {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+} */
+/* th {
+  background-color: rgb(207, 207, 207);
+  font-size: 1.2rem;
+} */
+/* table th,
+table td,
+table tr {
+  width: fit-content;
+  border-bottom: 1px solid rgb(63, 62, 62);
+  font-size: 1.2rem;
+  padding: 6px;
+} */
+
+.status-box {
+  width: 100%;
+  height: 30px;
+  padding: 6px;
+  color: white;
+  font-weight: bold;
+}
+.edit-btn-employee {
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 60px;
+  margin: 6px 0px 6px 12px;
+  border-radius: 4px;
+  background-color: rgb(74, 105, 142);
+  border: 2px solid rgb(60, 75, 96);
+  color: white;
+}
+.edit-btn-employee:hover {
+  background-color: white;
+  border: 2px solid rgb(60, 75, 96);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  color: rgb(60, 75, 96);
+  transition: 0.3s;
+}
+.Remove-btn-employee {
+  font-weight: bold;
+  font-size: 1.2rem;
+  height: 30px;
+  width: 80px;
+  margin: 6px 0px 6px 12px;
+  border-radius: 4px;
+  background-color: rgb(62, 106, 238);
+  border: 2px solid rgb(46, 79, 178);
+  color: white;
+}
+.Remove-btn-employee:hover {
+  background-color: white;
+  border: 2px solid rgb(46, 79, 178);
+  box-shadow: 0px 0px 10px 1px rgba(60, 60, 60, 0.55);
+  color: rgb(46, 79, 178);
+  transition: 0.3s;
+}
+.details-row {
+  font-style: italic;
+}
+
+ @media screen and (max-width: 1000px) {
+  .title-employees {
+    margin-bottom: 20px;
+  }
+  .container-employees {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+  }
+
+  .nav-employees {
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+  }
+  .btns-employees {
+    margin: 0;
+  }
+  .btns-employees button {
+    scale: 0.9;
+    margin: 4px 0;
+  }
+}
+@media screen and (max-width: 530px) {
+  .employees-table {
+    overflow: scroll;
+  }
+  
+}

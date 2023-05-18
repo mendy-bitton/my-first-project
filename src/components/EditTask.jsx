@@ -47,7 +47,7 @@ function EditTask(props) {
     >
       <div className="container-edit popup-edit">
         <div className="input-box-edit">
-          <span className="title-edit">Edit Task # {props.task.id}</span>
+          <span className="title-edit">Edit Task # {props.task.taskId}</span>
           <a className="close" href="#" onClick={props.hide}>
             &times;
           </a>
@@ -75,7 +75,7 @@ function EditTask(props) {
               />
             </label>
             <label className="label-new">
-              <legend className="legend-new">Status:</legend>
+              <legend className="legend-edit">Status:</legend>
               <select
                 defaultValue={props.task.isCompleted}
                 onChange={handleChange}
@@ -89,11 +89,11 @@ function EditTask(props) {
               </select>
             </label>
             <label className="label-new">
-              <legend className="legend-new">Assigned:</legend>
+              <legend className="legend-edit">Assigned:</legend>
               <select
                 onChange={handleChange}
                 name="assigned"
-                className="check-new"
+                className="assigned-edit"
               >
                 <option value={null}>
                   {"-"}

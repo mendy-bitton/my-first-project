@@ -34,7 +34,7 @@ function Employee(props) {
       <td data-cell="First Name">{emp.fName}</td>
       <td data-cell="Last Name">{emp.lName}</td>
       <td data-cell="Phone">{emp.phone}</td>
-      <td data-cell="Available">{available}</td>
+      <td className="status-box-emp" data-cell="Available">{available}</td>
       <td data-cell="Details" className="details-row">
         {emp.details}
       </td>

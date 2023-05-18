@@ -109,6 +109,9 @@
   }
   
   @media screen and (max-width: 700px){
+    .popup-new-task{
+      height: 540px;
+    }
     .popup-new{
       width: 70%;
     }

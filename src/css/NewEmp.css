@@ -37,17 +37,18 @@
     text-align: start;
 }
 .legend-new{
-    margin: 20px 0 4px 0;
+    margin: 20px 0 4px 4%;
 }
 .input-new{
-    width: 100%;
+    width: 90%;
+    font-size: 1rem;
     padding: 6px 8px;
     color: rgb(63, 62, 62);
     border: 1px solid rgb(63, 62, 62);
     border-radius: 4px;
 }
 .check-new{
-    width: 100%;
+    width: 90%;
     border: 1px solid rgb(63, 62, 62);
     border-radius: 4px;
     padding: 4px;
@@ -92,10 +93,10 @@
     opacity: 1;
     visibility: visible;
   }
-  .popup-new {
+  .popup-new-emp {
     position: relative;
   }
-  .popup-new .close {
+  .popup-new-emp .close {
     position: absolute;
     top: 4px;
     right: 20px;
@@ -110,10 +111,14 @@
   }
   
   @media screen and (max-width: 700px){
-    .popup-new{
-      width: 70%;
+    .popup-new-emp{
+      width: 80%;
+      height: 600px;
     }
+
     .btn-new{
       width: 90%;
+      margin-bottom: 3rem;
   }
+
   }

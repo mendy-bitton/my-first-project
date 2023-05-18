@@ -30,20 +30,6 @@ function Employees() {
     loadingPage,
   } = useContext(Arreys);
   
-  // useEffect(() => {
-  //   let text1 = "The Employee Was Edited Successfully!";
-  //   let text2 = "The Employee Was Removed Successfully!";
-  //   let text3 = "The Employee Was Added Successfully!";
-  //   if (alertText === 1) {
-  //     toast(text1);
-  //   }
-  //   if(alertText === 2){
-  //     toast(text2);
-  //   }
-  //   if(alertText === 3){
-  //     toast(text3);
-  //   }
-  // }, []);
 
   useEffect(() => {
     changeEmpsFilterd();

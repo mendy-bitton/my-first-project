@@ -6,7 +6,7 @@
   src: url("../calibri.ttf");
 }
 .header {
-  max-width: 100%;
+ width: 100%;
   min-height: 70px;
   background-color: rgba(255, 255, 255, 0.5);
   display: flex;
@@ -63,11 +63,12 @@
 }
 .logout-btn:hover{
   color: rgb(236, 236, 236) ;
-  background-color: rgb(208, 115, 115) ;
+  background-color: rgb(208, 115, 115);
   transition: 0.3s;
 }
 @media screen and (max-width: 875px) {
   .navbar {
+    z-index: 1;
     font-size: 1.2rem;
     font-weight: normal;
     display: flex;
@@ -78,7 +79,7 @@
     right: -300px;
     width: 300px;
     height: 100vh;
-    background-color: rgba(101, 101, 101, 0.9);
+    background-color: rgba(101, 101, 101);
     box-shadow: 0 40px 60px rgba(248, 205, 205, 0.5);
   }
   .navbar.active {
@@ -104,8 +105,8 @@
   .logout-btn {
     font-weight: bold;
     font-size: 1.2rem;
-    height: 30px;
-    width: 80px;
+    height: 2rem;
+    width: 7rem;
     margin: 0 auto;
     margin-top: 100%;
   }

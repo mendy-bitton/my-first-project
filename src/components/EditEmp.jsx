@@ -33,7 +33,7 @@ function EditTask(props) {
       <div className="container-edit popup-edit">
         <div className="input-box-edit">
           <span className="title-edit">
-            Edit Employee # {props.employee.id}
+            Edit Employee #{props.employee.empId}
           </span>
           <a className="close" onClick={props.hide}>
             &times;

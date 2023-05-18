@@ -36,7 +36,7 @@ function NewEmp(props) {
       exit={{ opacity: 0 }}
       transition={{duration:0.5}}
     >
-      <div className="container-new popup-new">
+      <div className="container-new popup-new-emp">
         <div className="input-box-new">
           <span className="title-new">Add A New Employee</span>
           <a className="close" onClick={props.hide} href="#">

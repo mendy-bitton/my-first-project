@@ -132,11 +132,10 @@ tr:hover {
   background-color: rgb(255, 255, 255);
   transition: 0.3s;
 }
-.status-box {
+.status-box-emp {
   width: 100%;
   height: 30px;
   padding: 6px;
-  color: white;
   font-weight: bold;
 }
 .edit-small-btn {
@@ -187,8 +186,9 @@ tr:hover {
       display: flex;
       flex-direction: column;
       margin-top: 70px;
+      width: 100%;
+      margin-left: 0;
     }
-  
     .nav-tasks {
       text-align: center;
       justify-content: center;
@@ -203,13 +203,26 @@ tr:hover {
       scale: 0.9;
       margin: 4px 0;
     }
-    #status-cell{
+    table{
+      height: fit-content;
+    }
+    .status-box-emp{
       display: flex;
       align-items: center;
     }
-    #status-cell div{
-      margin-left: 10ch;
-
+    .status-box-emp
+    #Completed,
+    .status-box-emp #Uncompleted{
+      margin-left: 5rem;
+    }
+    .status-box{
+      display: flex;
+      align-items: center;
+    }
+    .status-box
+    #Completed,
+    .status-box #Uncompleted{
+      margin-left: 5rem;
     }
     td{
       width: 400px;
@@ -231,14 +244,6 @@ tr:hover {
     th{
       display: none;
     }
-    /* table th,
-    table td,
-    table tr {
-      border-bottom: 1px solid rgb(63, 62, 62);
-      font-size: 0.9rem;
-      flex-wrap: wrap;
-    }
-    */
     .no-tasks-text {
       scale: 0.9;
     }
@@ -246,15 +251,23 @@ tr:hover {
       margin: 20px auto;
       width: 200px;
       height: 40px;
-      font-size: 1rem;
+      font-size: 1.2rem;
     }
     .Remove-btn {
      margin: 2px 4px;
+     width: 5rem;
      padding: 0;
     }
     .edit-small-btn {
       margin: 2px auto;
       padding: 0;
+    }
+    #status-cell div{
+      margin-left: 8ch;
+    }
+    #Uncompleted{
+      padding: 0 0.5rem;
+      margin-left: 2rem;
     }
   }
   @media screen and (max-width: 545px) {

@@ -157,7 +157,7 @@ function Login() {
               </div>
               {showError && (
                 <motion.div className="error-msg">
-                  Username or Password not correct! try again!{" "}
+                  Username or Password not correct!{" "}
                 </motion.div>
               )}
             </div>
@@ -276,7 +276,7 @@ function Login() {
               </div>
               {showError && (
                 <motion.div className="error-msg-signup">
-                  Email or Password not correct! try again!
+                  Email or Password not correct!
                 </motion.div>
               )}
             </div>

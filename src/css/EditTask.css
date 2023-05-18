@@ -24,6 +24,7 @@
   font-weight: bold;
 }
 .input-box-edit {
+  font-size: 1rem;
   margin: 20px auto 0 auto;
   width: 90%;
   text-align: center;
@@ -35,7 +36,7 @@
   text-align: start;
 }
 .legend-edit {
-  margin: 18px 0 4px 0;
+  margin: 18px 0 4px 5%;
 }
 .input-edit {
   width: 100%;
@@ -45,7 +46,14 @@
   border-radius: 4px;
 }
 .check-edit {
-  width: 100%;
+  width: 90%;
+  border: 1px solid rgb(63, 62, 62);
+  border-radius: 4px;
+  padding: 4px;
+  text-align: center;
+}
+.assigned-edit{
+  width: 95%;
   border: 1px solid rgb(63, 62, 62);
   border-radius: 4px;
   padding: 4px;
@@ -114,5 +122,6 @@
   .btn-edit{
     width: 90%;
 }
+
 }
 

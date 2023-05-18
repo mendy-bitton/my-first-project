@@ -29,6 +29,7 @@
   width: 114px;
   height: 30px;
   margin-left: 20px;
+  padding:0 0.5rem;
   font-size: 1rem;
   color: white;
   font-weight: bold;
@@ -134,13 +135,12 @@ table tr {
   padding: 6px;
 } */
 
-.status-box {
-  width: 100%;
+.status-box-emp {
+  width: fit-content;
   height: 30px;
-  padding: 6px;
-  color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
+
 .edit-btn-employee {
   font-weight: bold;
   font-size: 1.2rem;
@@ -185,12 +185,22 @@ table tr {
   .title-employees {
     margin-bottom: 20px;
   }
+  .btns-employees #Not-Available{
+width: fit-content;
+  }
+
   .container-employees {
     display: flex;
     flex-direction: column;
     margin-top: 70px;
   }
-
+.status-box-emp #On-A-Task,
+.status-box-emp #Available,
+.status-box-emp #Not-Available
+{
+padding: 0 1rem;
+margin-left: 4rem;
+}
   .nav-employees {
     text-align: center;
     justify-content: center;
@@ -204,10 +214,16 @@ table tr {
     scale: 0.9;
     margin: 4px 0;
   }
-}
-@media screen and (max-width: 530px) {
-  .employees-table {
-    overflow: scroll;
+  .Remove-btn-employee{
+    width: 6.4rem;
+    margin-left: 0.5rem;
   }
-  
+  .edit-btn-employee{
+    width: 4.5rem;
+    margin-left: 0;
+  }
+  .add-employee{
+    margin: 20px auto;
+  }
 }
+

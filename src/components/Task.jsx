@@ -30,7 +30,7 @@ function Task(props) {
       <td data-cell="ID">#{task.taskId}</td>
       <td data-cell="Title">{task.title}</td>
       <td data-cell="Date">{task.date}</td>
-      <td data-cell="Status" id="status-cell">
+      <td data-cell="Status" className="status-box">
         {is_complete}
       </td>
       <td data-cell="Assigned">
